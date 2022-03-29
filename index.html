@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Linkbandit"/>
+  <meta name="og:title" content="Linkbandit"/>
+  <meta name="og:description" content="A customizable link generator that will sometimes produce results!"/>
+  <meta name="og:type" content="website"/>
+  <meta name="og:url" content="https://182exe.github.io/linkbandit"/>
+  <meta name="og:image" content="https://raw.githubusercontent.com/182exe/resources/main/thing.png"/>
+  <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/182exe/resources/main/thing.png"/>
+  <link rel="icon" type="image/jpg" href="https://raw.githubusercontent.com/182exe/resources/main/thing.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+  <title>Linkbandit</title>
+</head>
+<body>
+  <div class="title">
+    <h1>Linkbandit</h1>
+    <h5>A customizable link generator that will sometimes produce results!</h5>
+  </div>
+  <hr class="hr">
+  <div class="title">
+    <h3>Settings</h3>
+    <h5>Please input how many links you want to generate.</h5>
+    <input id="lengthInput" class="settings" type="number" placeholder="Number of Links"> <div class="tooltip">[?]<span class="tooltiptext">How many links do you want to make?</span></div>
+    <br>
+    <br>
+    <input id="urlInput" class="settings" type="url" placeholder="Link Prefix"> <div class="tooltip">[?]<span class="tooltiptext">What should the base link be? e.g. https://discord.gift/ (must include https:// and a / at the end.)</span></div>
+    <br>
+    <br>
+    <input id="extensionInput" class="settings" type="number" placeholder="Extension Length"> <div class="tooltip">[?]<span class="tooltiptext">How many randomized characters should there be attached to the end of the links?</span></div>
+    <br>
+    <br>
+    <button class="button" onclick="javascript:updateSettings()">Generate</button>
+    <button class="button" onclick="javascript:copyResult()">Copy Result</button>
+    <button class="button" onclick="javascript:viewRaw()">View Raw Result</button>
+    <select id="premadeModes">
+      <option value="hypixelDaily">Hypixel Daily Reward</option>
+      <option value="discordNitro">Discord Nitro</option>
+    </select>
+    <button class="button" onclick="javascript:loadPremade()">Select Preset</button>
+    <br>
+    <br>
+  </div>
+  <hr class="hr">
+  <div class="text"></div>
+  <script src="main.js"></script>
+</body>
+</html>
