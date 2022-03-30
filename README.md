@@ -7,6 +7,7 @@ Features:
 > - Customize base URLs, extension length, and filler characters
 > - No ratelimit
 > - Preset configurations
+> - Dark and Light themes
 
 Planned Features:
 > - Customizable colors, fonts, and UI
