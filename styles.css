@@ -1,5 +1,10 @@
+:root {
+  --quietmidnight: #12121F;
+  --raspberry: #E53B5E;
+}
+
 body {
-  background-color: #12121F;
+  background-color: var(--quietmidnight);
   font-family: 'Fredoka', sans-serif;
   margin-left: 25%;
   margin-right: 25%;
@@ -8,60 +13,60 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-weight: normal;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .settings {
-  background-color: #12121F;
+  background-color: var(--quietmidnight);
   font-family: 'Fredoka', sans-serif;
-  border: 3px solid #E53B5E;
+  border: 3px solid var(--raspberry);
   border-radius: 10px;
-  color: #F25374;
+  color: var(--raspberry);
   padding: 6px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .button {
-  background-color: #F25374;
+  background-color: var(--raspberry);
   font-family: 'Fredoka', sans-serif;
   border: none;
-  color: #12121F;
+  color: var(--quietmidnight);
   padding-left: 6px;
   padding-right: 6px;
   padding-top: 6px;
   padding-bottom: 6px;
-  border: 3px solid #F25374;
+  border: 3px solid var(--raspberry);
   border-radius: 10px;
   font-weight: bold;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .button:hover {
-  background-color: #12121F;
-  color: #F25374;
+  background-color: var(--quietmidnight);
+  color: var(--raspberry);
   padding-left: 10px;
   padding-right: 10px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .button:active {
-  background-color: #F25374;
-  color: #12121F;
-  transition: 0.5s ease-in-out;
+  background-color: var(--raspberry);
+  color: var(--quietmidnight);
+  transition: 0.3s ease-in-out;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #E53B5E;
+  color: var(--raspberry);
   opacity: 1; /* Firefox */
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #E53B5E;
-  transition: 0.5s ease-in-out;
+  color: var(--raspberry);
+  transition: 0.3s ease-in-out;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #E53B5E;
-  transition: 0.5s ease-in-out;
+  color: var(--raspberry);
+  transition: 0.3s ease-in-out;
 }
 
 .title {
@@ -71,12 +76,12 @@ body {
   outline: none;
   font-size: 20px;
   font-weight: normal;
-  color: #F25374;
-  background-color: #12121F;
+  color: var(--raspberry);
+  background-color: var(--quietmidnight);
   padding-top: 0.1%;
   padding-bottom: 0.1%;
   font-family: 'Fredoka', sans-serif;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .text, .input {
@@ -86,17 +91,17 @@ body {
   outline: none;
   font-size: 20px;
   font-weight: normal;
-  color: #F25374;
-  background-color: #12121F;
+  color: var(--raspberry);
+  background-color: var(--quietmidnight);
   padding-top: 2%;
   padding-bottom: 2%;
   font-family: 'Fredoka', sans-serif;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hr {
-  border-color: #F25374;
-  transition: 0.5s ease-in-out;
+  border-color: var(--raspberry);
+  transition: 0.3s ease-in-out;
 }
 
 span {
@@ -105,11 +110,11 @@ span {
   padding: 20px;
   border-radius: 10px;
   display: block;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 input {
-  width: 90%;
+  width: 60%;
 }
 
 @keyframes fly {
@@ -129,42 +134,43 @@ input {
 .tooltip {
   position: relative;
   display: inline-block;
+  transition: 0.3s ease-in-out;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   background-color: #00000080;
   width: 300px;
-  color: #F25374;
+  color: var(--raspberry);
   text-align: center;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 10px;
   position: absolute;
   z-index: 1;
   top: -100%;
   left: 105%;
   border-radius: 5px;
+  transition: 0.3s ease-in-out;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  transition: 0.3s ease-in-out;
 }
 
 select {
-  background-color: #12121F;
+  background-color: var(--quietmidnight);
   font-family: 'Fredoka', sans-serif;
-  border: 3px solid #E53B5E;
+  border: 3px solid var(--raspberry);
   border-radius: 10px;
-  color: #F25374;
+  color: var(--raspberry);
   padding: 6px;
-  width: 50%;
-  transition: 0.5s ease-in-out;
+  width: 35%;
+  transition: 0.3s ease-in-out;
 }
 
 select:hover {
-  background-color: #F25374;
-  color: #12121F;
-  padding-left: 10px;
-  padding-right: 10px;
-  transition: 0.5s ease-in-out;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition: 0.3s ease-in-out;
 }
