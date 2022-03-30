@@ -72,6 +72,11 @@ function copyResult() {
 function loadPremade() {
   selectElement = document.querySelector('#premadeModes');
   output = selectElement.value;
+  if (output == "none") {
+    document.getElementById("lengthInput").value = none[0];
+    document.getElementById("urlInput").value = none[1];
+    document.getElementById("extensionInput").value = none[2];
+  }
   if (output == "hypixelDaily") {
     document.getElementById("lengthInput").value = hypixelDaily[0];
     document.getElementById("urlInput").value = hypixelDaily[1];
@@ -84,9 +89,32 @@ function loadPremade() {
   }
 }
 
+document.getElementById('premadeModes').addEventListener('change', function() {
+  loadPremade();
+});
+
 //-----PREMADE SETTINGS DEFAULTS-----//
 
+const none = ["", "", ""];
 const hypixelDaily = ["10", "https://rewards.hypixel.net/claim-reward/", "8"];
 const discordNitro = ["10", "https://discord.gift/", "16"];
 
 //-----PREMADE SETTINGS DEFAULTS-----//
+
+let dark = 1;
+function updateTheme() {
+  var r = document.querySelector(':root');
+  if (dark == 1) {
+    r.style.setProperty('--quietmidnight', '#DFDFFF');
+    r.style.setProperty('--raspberry', '#000');
+    dark = 0;
+  } else {
+    r.style.setProperty('--quietmidnight', '#12121F');
+    r.style.setProperty('--raspberry', '#E53B5E');
+    dark = 1;
+  }
+}
+
+function notify(text) {
+  
+}
