@@ -98,6 +98,8 @@ document.getElementById('premadeModes').addEventListener('change', function() {
 const none = ["", "", ""];
 const hypixelDaily = ["10", "https://rewards.hypixel.net/claim-reward/", "8"];
 const discordNitro = ["10", "https://discord.gift/", "16"];
+const pasteBin = ["10", "https://pastebin.com/", "8"];
+const ghostBin = ["10", "https://ghostbin.com/", "5"];
 
 //-----PREMADE SETTINGS DEFAULTS-----//
 
