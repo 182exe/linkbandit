@@ -126,7 +126,3 @@ function updateTheme() {
     dark = 1;
   }
 }
-
-function notify(text) {
-  
-}
