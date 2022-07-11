@@ -108,6 +108,8 @@ document.getElementById('premadeModes').addEventListener('change', function() {
 const none = ["", "", ""];
 const hypixelDaily = ["10", "https://rewards.hypixel.net/claim-reward/", "8"];
 const discordNitro = ["10", "https://discord.gift/", "16"];
+const discordInviteTemp = ["10", "https://discord.gg/", "8"];
+const discordInviteInf = ["10", "https://discord.gg/", "10"];
 const pasteBin = ["10", "https://pastebin.com/", "8"];
 const ghostBin = ["10", "https://ghostbin.com/", "5"];
 
