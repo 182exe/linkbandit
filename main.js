@@ -87,6 +87,16 @@ function loadPremade() {
     document.getElementById("urlInput").value = discordNitro[1];
     document.getElementById("extensionInput").value = discordNitro[2];
   }
+  if (output == "discordInviteTemp") {
+    document.getElementById("lengthInput").value = discordInviteTemp[0];
+    document.getElementById("urlInput").value = discordInviteTemp[1];
+    document.getElementById("extensionInput").value = discordInviteTemp[2];
+  }
+  if (output == "discordInviteInf") {
+    document.getElementById("lengthInput").value = discordInviteInf[0];
+    document.getElementById("urlInput").value = discordInviteInf[1];
+    document.getElementById("extensionInput").value = discordInviteInf[2];
+  }
   if (output == "pasteBin") {
     document.getElementById("lengthInput").value = pasteBin[0];
     document.getElementById("urlInput").value = pasteBin[1];
